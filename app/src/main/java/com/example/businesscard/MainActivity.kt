@@ -1,8 +1,6 @@
 package com.example.businesscard
 
-import android.R.attr.name
 import android.os.Bundle
-import android.util.Log.v
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
@@ -69,7 +67,6 @@ fun Logo(avatar : Painter, name: String, tilte: String, modifier: Modifier = Mod
 @Composable
 fun Contact(modifier: Modifier = Modifier) {
     Column(modifier = modifier.padding(bottom = 20.dp)) {
-        val iconColor = Color(0xFF006D3B)
         ContactRow(painterResource(R.drawable.baseline_phone_24), "0859988968")
         ContactRow(painterResource(R.drawable.baseline_share_24), "@phamtuyen")
         ContactRow(painterResource(R.drawable.outline_attach_email_24), "phamvantuyen1110@gmail.com")
